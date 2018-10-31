@@ -64,12 +64,22 @@ $levels = $_POST['lev'];
                     <li id="nav_filt" onclick="filt_form()">fILTR</li>
                     <li id="nav_iz" onclick="">izmenit</li>
                     <li id="nav_da" onclick="ad_form()">Insert</li>
-                    <li><button onclick = "filt_form()" style="height : 100%; width : 100%;">filtr</button></li>
+                    <!-- <li><button onclick = "filt_form()" style="height : 100%; width : 100%;">filtr</button></li> -->
                 </ul>
-                <button onclick = "filt_form()" style=" display : inline-block">filtr</button>
-                <div id="filt">
-
-                </div>
+                <!-- <button onclick = "filt_form()" style=" display : inline-block">filtr</button> -->
+                <form method="post" id="filt_form">
+                Kafedra filt : <br>
+                <select name="filt_kaf" id="filt_kaf">
+                    <option value=""></option>
+                    <option value="Жаратылыстану ғылымдары">Жаратылыстану ғылымдары</option>
+                    <option value="Жоғары математика және физика">Жоғары математика және физика	</option>
+                </select><br><br>
+                Filter : <br>
+                <input type="text" name="filt" id=""><br><br>
+                <input class="submit" id="actF" type="submit" value="Filtratsia" name = "actF"><br>
+                <input class="submit" id="sbr" type="submit" value="Sbros" name = "sbr" >
+                </form>
+                <!-- <div id="filt"></div> -->
             </div>
         </div>
         <div id="str1_0">
